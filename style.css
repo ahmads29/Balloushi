@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+body {
+    background-color: rgb(255, 217, 0);
+    direction: rtl;
+    font-family: "Aref Ruqaa", serif;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    align-items: center;
+    text-align: center;
+}
+.collapse{
+  text-align: right;
+}
+.navbar-toggler {
+  margin-left: 0;
+}
+.navbar-nav {
+  margin-right: auto;
+  padding-left: 20px !important;
+}
+.navbar-brand {
+  margin-left: auto;
+}
+.navbar{
+    background-color:  #ffc800 !important;
+}
+.typewriter {
+    display: inline-block;
+    overflow: hidden; 
+    border-left: 0.15em solid black;
+    white-space: nowrap; 
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    direction: rtl; 
+    margin-top: 40px !important;
+  }
+  
+  .typewriter h1 {
+    font-size: 2em;
+    margin: 0;
+    display: inline; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    direction: rtl; 
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+
+
+.devzur_menu-item{
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 260px;
+    margin: 10px;
+}
+.devzur_menu-item img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.devzur_meun-item-p1{
+    padding: 0%;
+    margin: 0%;
+    margin-top: 5px;
+}
+.devuzr_menu-item-details a{
+    color: white;
+    background-color: #ffbb00;
+    padding: 5px 60px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.devuzr_menu-item-details a:hover{
+    background-color: #cfa533;
+}
+.devzur_menu-items-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media(max-width:440px){
+    .devzur_menu-item{
+        width: 150px;
+        height: 200px;
+        margin: 10px;
+    }
+    .devzur_menu-item img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .devuzr_menu-item-details a{
+        font-size: small;
+        padding: 5px 40px;
+        margin: 0%;
+    }
+    .devzur_meun-item-p2{
+        margin-bottom: 8px;
+    }
+}
+
+.footer {
+    margin-top: 170px;
+    position: relative;
+    /* width: 100%; */
+    background: #ffa500;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  .menu a:hover{
+    color: black;
+  }
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("wave-footer.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  .devzur_copyrights{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-decoration:underline;
+  }
+  
+  /* Scrollbar Start */
+  ::-webkit-scrollbar {
+    height: 3px;
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #eeeeee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: orange !important;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dddddd;
+  }
+  /* Scrollbar End */
+  
