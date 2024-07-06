@@ -147,6 +147,7 @@ body {
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    padding: 0%;
   }
   
   .social-icon__item,
