@@ -68,13 +68,13 @@ body {
 
 .devzur_menu-item{
     width: 200px;
-    border-radius: 10px;
+    border-radius: 11px;
     border: 1px solid black;
     height: 260px;
     margin: 10px;
 }
 .devzur_menu-item img{
-    width: 200px;
+    width: 198px;
     height: 150px;
     object-fit: cover;
     border-top-right-radius: 10px;
@@ -128,7 +128,7 @@ body {
 .footer {
     margin-top: 170px;
     position: relative;
-    /* width: 100%; */
+    width: 100%;
     background: #ffa500;
     min-height: 100px;
     padding: 20px 50px;
